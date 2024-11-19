@@ -1,0 +1,21 @@
+@font-face {
+  font-family: "Ubuntu";
+  src:
+    local("Ubuntu"),
+    url(../assets/Ubuntu/Ubuntu-Regular.ttf) format("ttf");
+}
+@font-face {
+  font-family: "UbuntuBold";
+  src:
+    local("UbuntuBold"),
+    url(../assets/Ubuntu/Ubuntu-Bold.ttf) format("ttf");
+}
+html,
+body,
+#__next,
+#app {
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+  font-family: Ubuntu;
+}
