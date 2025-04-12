@@ -1,19 +1,21 @@
-import { ArrowRight, ExternalLink, Github, Mail } from "lucide-react"
-import Link from "next/link"
-import TechCarousel from "@/components/tech-carousel"
-import ProjectCard from "@/components/project-card"
-import BlogPost from "@/components/blog-post"
-import ContactForm from "@/components/contact-form"
-import { Button } from "@/components/ui/button"
+import { ArrowRight, ExternalLink, Github, Mail } from "lucide-react";
+import Link from "next/link";
+import TechCarousel from "@/components/tech-carousel";
+import ProjectCard from "@/components/project-card";
+import BlogPost from "@/components/blog-post";
+import ContactForm from "@/components/contact-form";
+import { Button } from "@/components/ui/button";
+import { FaInstagram } from "react-icons/fa";
 
 export default function Home() {
-  const isSubmitting = false // Placeholder for form submission state
+  const isSubmitting = false; // Placeholder for form submission state
 
   const sampleProjects = [
     {
       id: 1,
       title: "AI-Powered Analytics Dashboard",
-      description: "A real-time analytics platform with AI-driven insights for business intelligence.",
+      description:
+        "A real-time analytics platform with AI-driven insights for business intelligence.",
       tags: ["React", "Node.js", "TensorFlow", "AWS"],
       image: "/placeholder.svg?height=300&width=500",
       link: "#",
@@ -23,7 +25,8 @@ export default function Home() {
     {
       id: 2,
       title: "E-commerce Platform",
-      description: "A full-featured e-commerce solution with payment processing and inventory management.",
+      description:
+        "A full-featured e-commerce solution with payment processing and inventory management.",
       tags: ["Next.js", "MongoDB", "Stripe", "Tailwind"],
       image: "/placeholder.svg?height=300&width=500",
       link: "#",
@@ -33,7 +36,8 @@ export default function Home() {
     {
       id: 3,
       title: "Smart Home IoT System",
-      description: "An IoT platform for controlling and monitoring smart home devices.",
+      description:
+        "An IoT platform for controlling and monitoring smart home devices.",
       tags: ["Python", "MQTT", "React Native", "Firebase"],
       image: "/placeholder.svg?height=300&width=500",
       link: "#",
@@ -50,7 +54,7 @@ export default function Home() {
       github: "#",
       featured: true,
     },
-  ]
+  ];
 
   return (
     <div className="min-h-screen bg-black text-white">
@@ -63,16 +67,28 @@ export default function Home() {
             </span>
           </Link>
           <div className="hidden md:flex space-x-8">
-            <Link href="#about" className="hover:text-cyan-400 transition-colors">
+            <Link
+              href="#about"
+              className="hover:text-cyan-400 transition-colors"
+            >
               About
             </Link>
-            <Link href="#projects" className="hover:text-cyan-400 transition-colors">
+            <Link
+              href="#projects"
+              className="hover:text-cyan-400 transition-colors"
+            >
               Projects
             </Link>
-            <Link href="#blog" className="hover:text-cyan-400 transition-colors">
+            <Link
+              href="#blog"
+              className="hover:text-cyan-400 transition-colors"
+            >
               Blog
             </Link>
-            <Link href="#contact" className="hover:text-cyan-400 transition-colors">
+            <Link
+              href="#contact"
+              className="hover:text-cyan-400 transition-colors"
+            >
               Contact
             </Link>
           </div>
@@ -108,7 +124,8 @@ export default function Home() {
               with code
             </h1>
             <p className="text-lg md:text-xl text-zinc-400 mb-8">
-              Full-stack developer specializing in creating innovative digital experiences
+              Full-stack developer specializing in creating innovative digital
+              experiences
             </p>
             <div className="flex justify-center gap-4">
               <Link
@@ -138,17 +155,26 @@ export default function Home() {
               </span>
             </h2>
             <p className="text-lg text-zinc-300 mb-6">
-              I'm a passionate software developer with over 5 years of experience building web and mobile applications.
-              My expertise spans across frontend and backend development, with a focus on creating intuitive,
-              performant, and visually appealing digital experiences.
+              I'm a passionate Fullstack Developer with a solid background in
+              Computer Engineering and hands-on experience in web and backend
+              development using JavaScript, Python, Angular, .NET, and C#.
+              Proficient with modern frameworks such as ReactJS, NodeJS, and
+              Laravel, and experienced in working with PostgreSQL and MySQL
+              databases.
             </p>
             <p className="text-lg text-zinc-300 mb-6">
-              I thrive in collaborative environments and enjoy tackling complex problems with elegant solutions. My
-              approach combines technical excellence with a deep understanding of user needs and business goals.
+              Strong background in Agile environments, having acted as both
+              Agile Master and QA professional. Skilled in tools such as GitLab,
+              Jira, and AWS. Analytical and results-driven, with excellent
+              communication and adaptability.
+            </p>
+            <p className="text-lg text-zinc-300 mb-6">
+              Currently pursuing a Master’s degree in Computer Science with a
+              focus on machine learning and genomic data. Intermediate English
+              proficiency for technical reading and communication.
             </p>
             <p className="text-lg text-zinc-300">
-              When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, or
-              sharing my knowledge through technical writing and mentoring.
+              When I'm not coding, you can find me having a good time with my dogs, playing Assassin's Creed, drinking coffee or under a tree reading a DarkSide's book. 
             </p>
           </div>
         </div>
@@ -167,7 +193,7 @@ export default function Home() {
       </section>
 
       {/* Featured Projects Section */}
-      <section id="featured-projects" className="py-20 bg-black">
+      <section id="featured-projects" className="py-20 bg-zinc-950">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
@@ -175,7 +201,9 @@ export default function Home() {
                 Featured Projects
               </span>
             </h2>
-            <p className="text-zinc-400 max-w-2xl mx-auto">Check out some of my recent work and technical projects</p>
+            <p className="text-zinc-400 max-w-2xl mx-auto">
+              Check out some of my recent work and technical projects
+            </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
@@ -192,51 +220,6 @@ export default function Home() {
               <Button className="bg-gradient-to-r from-pale_purple-400 to-pomp_and_power-500 text-black">
                 View All Projects
               </Button>
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* Projects Section */}
-      <section id="projects" className="py-20 bg-zinc-950">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-12 text-center">
-            <span className="bg-clip-text text-transparent bg-gradient-to-r from-pale_purple-400 to-pomp_and_power-500">
-              Featured Projects
-            </span>
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <ProjectCard
-              title="AI-Powered Analytics Dashboard"
-              description="A real-time analytics platform with AI-driven insights for business intelligence."
-              tags={["React", "Node.js", "TensorFlow", "AWS"]}
-              image="/placeholder.svg?height=300&width=500"
-              link="#"
-              github="#"
-            />
-            <ProjectCard
-              title="E-commerce Platform"
-              description="A full-featured e-commerce solution with payment processing and inventory management."
-              tags={["Next.js", "MongoDB", "Stripe", "Tailwind"]}
-              image="/placeholder.svg?height=300&width=500"
-              link="#"
-              github="#"
-            />
-            <ProjectCard
-              title="Smart Home IoT System"
-              description="An IoT platform for controlling and monitoring smart home devices."
-              tags={["Python", "MQTT", "React Native", "Firebase"]}
-              image="/placeholder.svg?height=300&width=500"
-              link="#"
-              github="#"
-            />
-          </div>
-          <div className="text-center mt-12">
-            <Link
-              href="/projects"
-              className="px-6 py-3 rounded-full border border-zinc-700 text-white font-medium inline-flex items-center gap-2 hover:bg-zinc-900 transition-colors"
-            >
-              View All Projects <ArrowRight size={18} />
             </Link>
           </div>
         </div>
@@ -292,46 +275,52 @@ export default function Home() {
               Get In Touch
             </span>
           </h2>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-5xl mx-auto">
+          <div className="text-center">
             <div>
-              <h3 className="text-xl font-semibold mb-4">Contact Information</h3>
+              <h3 className="text-xl font-semibold mb-4">
+                Contact Information
+              </h3>
               <p className="text-zinc-400 mb-6">
-                Feel free to reach out for collaboration opportunities, job inquiries, or just to say hello!
+                Feel free to reach out for collaboration opportunities, job
+                inquiries, or just to say hello!
               </p>
               <div className="space-y-4">
-                <div className="flex items-center gap-3">
+                <div className="justify-center flex items-center gap-3">
                   <Mail className="text-pale_purple-400" size={20} />
-                  <a href="mailto:hello@alexdev.com" className="text-zinc-300 hover:text-white">
-                    hello@frigg.dev
+                  <a
+                    href="mailto:glaucia.belo.dias@gmail.com"
+                    className="text-zinc-300 hover:text-white"
+                  >
+                    glaucia.belo.dias@gmail.com
                   </a>
                 </div>
-                <div className="flex items-center gap-3">
+                <div className="justify-center flex items-center gap-3">
                   <Github className="text-pale_purple-400" size={20} />
                   <a
-                    href="https://github.com/alexdev"
+                    href="https://github.com/FriggD"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-zinc-300 hover:text-white"
                   >
-                    github.com/friggdev
+                    https://github.com/FriggD
                   </a>
                 </div>
-                <div className="flex items-center gap-3">
+                <div className="justify-center flex items-center gap-3">
                   <ExternalLink className="text-pale_purple-400" size={20} />
                   <a
-                    href="https://linkedin.com/in/alexdev"
+                    href="https://www.linkedin.com/in/gmbdias/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-zinc-300 hover:text-white"
                   >
-                    linkedin.com/in/friggdev
+                    https://www.linkedin.com/in/gmbdias/
                   </a>
                 </div>
               </div>
             </div>
-            <div>
+            {/* <div>
               <ContactForm />
-            </div>
+            </div> */}
           </div>
         </div>
       </section>
@@ -346,10 +335,15 @@ export default function Home() {
                   FRIGG.DEV
                 </span>
               </Link>
-              <p className="text-zinc-500 mt-2">Building the future with code</p>
+              <p className="text-zinc-500 mt-2">
+                Building the future with code
+              </p>
             </div>
             <div className="flex space-x-6">
-              <a href="#" className="text-zinc-400 hover:text-cyan-400 transition-colors">
+              <a
+                href="https://www.linkedin.com/in/gmbdias/"
+                className="text-zinc-400 hover:text-cyan-400 transition-colors"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="20"
@@ -366,7 +360,10 @@ export default function Home() {
                   <circle cx="4" cy="4" r="2"></circle>
                 </svg>
               </a>
-              <a href="#" className="text-zinc-400 hover:text-cyan-400 transition-colors">
+              <a
+                href="https://github.com/FriggD"
+                className="text-zinc-400 hover:text-cyan-400 transition-colors"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="20"
@@ -381,20 +378,11 @@ export default function Home() {
                   <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
                 </svg>
               </a>
-              <a href="#" className="text-zinc-400 hover:text-cyan-400 transition-colors">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="20"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                >
-                  <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
-                </svg>
+              <a
+                href="https://www.instagram.com/friggtales"
+                className="text-zinc-400 hover:text-cyan-400 transition-colors"
+              >
+                <FaInstagram size={20}/>
               </a>
             </div>
           </div>
@@ -404,5 +392,5 @@ export default function Home() {
         </div>
       </footer>
     </div>
-  )
+  );
 }

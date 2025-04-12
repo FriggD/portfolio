@@ -2,51 +2,54 @@
 
 import { useState, useEffect, useRef } from "react"
 import { ChevronLeft, ChevronRight } from "lucide-react"
+import { FaPython, FaReact, FaNodeJs, FaAws, FaDocker } from "react-icons/fa"
+import { TbBrandCSharp } from "react-icons/tb";
+import { SiJavascript, SiTypescript, SiMongodb } from "react-icons/si"
 
 const technologies = [
   {
     name: "Python",
-    logo: "/placeholder.svg?height=80&width=80",
+    Icon: FaPython,
     color: "#3776AB",
   },
   {
     name: "JavaScript",
-    logo: "/placeholder.svg?height=80&width=80",
+    Icon: SiJavascript,
     color: "#F7DF1E",
   },
   {
     name: "TypeScript",
-    logo: "/placeholder.svg?height=80&width=80",
+    Icon: SiTypescript,
     color: "#3178C6",
   },
   {
     name: "React",
-    logo: "/placeholder.svg?height=80&width=80",
+    Icon: FaReact,
     color: "#61DAFB",
   },
   {
     name: "Node.js",
-    logo: "/placeholder.svg?height=80&width=80",
+    Icon: FaNodeJs,
     color: "#339933",
   },
   {
     name: "C#",
-    logo: "/placeholder.svg?height=80&width=80",
+    Icon: TbBrandCSharp,
     color: "#512BD4",
   },
   {
     name: "MongoDB",
-    logo: "/placeholder.svg?height=80&width=80",
+    Icon: SiMongodb,
     color: "#47A248",
   },
   {
     name: "AWS",
-    logo: "/placeholder.svg?height=80&width=80",
+    Icon: FaAws,
     color: "#FF9900",
   },
   {
     name: "Docker",
-    logo: "/placeholder.svg?height=80&width=80",
+    Icon: FaDocker,
     color: "#2496ED",
   },
 ]
@@ -105,7 +108,7 @@ export default function TechCarousel() {
                   className="w-16 h-16 mb-4 rounded-full flex items-center justify-center"
                   style={{ backgroundColor: `${tech.color}20` }}
                 >
-                  <img src={tech.logo || "/placeholder.svg"} alt={tech.name} className="w-10 h-10" />
+                  {tech.Icon && <tech.Icon size={32} style={{ color: tech.color }} />}
                 </div>
                 <span className="text-center font-medium">{tech.name}</span>
               </div>
@@ -132,3 +135,5 @@ export default function TechCarousel() {
     </div>
   )
 }
+
+
