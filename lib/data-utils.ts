@@ -31,6 +31,12 @@ export function getProjects(): Project[] {
   return sampleProjects
 }
 
+// Project data functions
+export function getFeatured(): Project[] | null{
+  const projects = getProjects()
+  return projects.filter((project) => project.featured === true) || null
+}
+
 export function getProjectById(id: number): Project | null {
   const projects = getProjects()
   return projects.find((project) => project.id === id) || null

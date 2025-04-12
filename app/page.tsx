@@ -6,55 +6,12 @@ import BlogPost from "@/components/blog-post";
 import ContactForm from "@/components/contact-form";
 import { Button } from "@/components/ui/button";
 import { FaInstagram } from "react-icons/fa";
+import { getFeatured } from "@/lib/data-utils"
 
 export default function Home() {
   const isSubmitting = false; // Placeholder for form submission state
 
-  const sampleProjects = [
-    {
-      id: 1,
-      title: "AI-Powered Analytics Dashboard",
-      description:
-        "A real-time analytics platform with AI-driven insights for business intelligence.",
-      tags: ["React", "Node.js", "TensorFlow", "AWS"],
-      image: "/placeholder.svg?height=300&width=500",
-      link: "#",
-      github: "#",
-      featured: true,
-    },
-    {
-      id: 2,
-      title: "E-commerce Platform",
-      description:
-        "A full-featured e-commerce solution with payment processing and inventory management.",
-      tags: ["Next.js", "MongoDB", "Stripe", "Tailwind"],
-      image: "/placeholder.svg?height=300&width=500",
-      link: "#",
-      github: "#",
-      featured: true,
-    },
-    {
-      id: 3,
-      title: "Smart Home IoT System",
-      description:
-        "An IoT platform for controlling and monitoring smart home devices.",
-      tags: ["Python", "MQTT", "React Native", "Firebase"],
-      image: "/placeholder.svg?height=300&width=500",
-      link: "#",
-      github: "#",
-      featured: false,
-    },
-    {
-      id: 4,
-      title: "Another Project",
-      description: "Just another project for testing purposes.",
-      tags: ["JavaScript", "HTML", "CSS"],
-      image: "/placeholder.svg?height=300&width=500",
-      link: "#",
-      github: "#",
-      featured: true,
-    },
-  ];
+  const featuredProjects = getFeatured()
 
   return (
     <div className="min-h-screen bg-black text-white">
@@ -74,13 +31,13 @@ export default function Home() {
               About
             </Link>
             <Link
-              href="#projects"
+              href="/projects"
               className="hover:text-cyan-400 transition-colors"
             >
               Projects
             </Link>
             <Link
-              href="#blog"
+              href="/blog"
               className="hover:text-cyan-400 transition-colors"
             >
               Blog
@@ -207,7 +164,7 @@ export default function Home() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
-            {sampleProjects
+            {featuredProjects
               .filter((project) => project.featured)
               .slice(0, 3)
               .map((project) => (
