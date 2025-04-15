@@ -36,12 +36,12 @@ export default function Home() {
             >
               Projects
             </Link>
-            <Link
+            {/* <Link
               href="/blog"
               className="hover:text-cyan-400 transition-colors"
             >
               Blog
-            </Link>
+            </Link> */}
             <Link
               href="#contact"
               className="hover:text-cyan-400 transition-colors"
@@ -183,7 +183,7 @@ export default function Home() {
       </section>
 
       {/* Blog Section */}
-      <section id="blog" className="py-20 bg-black">
+      {/* <section id="blog" className="py-20 bg-black">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold mb-12 text-center">
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-pale_purple-400 to-pomp_and_power-500">
@@ -222,7 +222,7 @@ export default function Home() {
             </Link>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Contact Section */}
       <section id="contact" className="py-20 bg-zinc-950">
