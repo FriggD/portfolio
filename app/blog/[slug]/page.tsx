@@ -90,7 +90,7 @@ export default async function BlogPostPage({ params }: { params: { slug: string 
         </div>
 
         <footer className="mt-12 pt-8 border-t border-gray-200">
-          <div className="flex flex-wrap gap-2">
+          <div className="flex flex-wrap gap-2 bg-black text-black">
             {article.tags.map((tag) => (
               <Link
                 key={tag}

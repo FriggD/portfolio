@@ -144,7 +144,7 @@ if __name__ == "__main__":
 
       `,
     category: "Ciencia da Computação",
-    tags: ["Algoritmos", ""],
+    tags: ["Algoritmos", "Aleatorios"],
     image: "/articles/dados.jpg?height=400&width=800",
     featured: true,
     status: "Published",
