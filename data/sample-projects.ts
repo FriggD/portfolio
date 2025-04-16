@@ -7,43 +7,45 @@ const sampleProjects: Project[] = [
     slug: "portfolio",
     description: "A place for me to show everything I love, one way or another..",
     content: `
-    <style>
-    .project-content {
-  max-width: 800px;
-  margin: 2rem auto;
-  padding: 1.5rem;;
-  line-height: 1.6;
-  color: #dedede;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-}
+<style>
+  .project-content {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    line-height: 1.6;
+    color: #dedede;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    background-color: #1a1a1a;
+  }
 
-.project-content h2 {
-  margin-top: 2rem;
-  font-size: 1.75rem;
-  color: #dedede;
-  border-bottom: 2px solid #e2e8f0;
-  padding-bottom: 0.5rem;
-}
+  .project-content h2 {
+    margin-top: 2rem;
+    font-size: 1.75rem;
+    color: #dedede;
+    border-bottom: 2px solid #e2e8f0;
+    padding-bottom: 0.5rem;
+  }
 
-.project-content p {
-  margin: 1rem 0;
-  font-size: 1rem;
-  color: #dedede;
-}
+  .project-content p {
+    margin: 1rem 0;
+    font-size: 1rem;
+    color: #dedede;
+  }
 
-.project-content ul {
-  margin: 1rem 0 1rem 1.5rem;
-  padding-left: 1rem;
-  list-style-type: disc;
-}
+  .project-content ul {
+    margin: 1rem 0 1rem 1.5rem;
+    padding-left: 1rem;
+    list-style-type: disc;
+  }
 
-.project-content li {
-  margin-bottom: 0.5rem;
-  font-size: 1rem;
-  color: #dedede;
-}
-    </style>
+  .project-content li {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    color: #dedede;
+  }
+</style>
+
      <div class="project-content">
       <h2>About the Project</h2>
       <p>This Portfolio is made to experiment and show new things, new technologies, new ways to do some cool things.</p>

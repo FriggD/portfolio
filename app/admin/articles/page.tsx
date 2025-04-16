@@ -84,7 +84,7 @@ export default function AdminArticlesPage() {
   return (
     <div className="min-h-screen bg-gray-50">
       <AdminHeader />
-      <main className="container mx-auto px-4 py-8">
+      <main className="container mx-auto px-4 py-8 ">
         <div className="flex justify-between items-center mb-6">
           <h1 className="text-2xl font-bold">Articles</h1>
           <Link href="/admin/articles/new">

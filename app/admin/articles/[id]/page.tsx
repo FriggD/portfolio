@@ -72,7 +72,7 @@ export default function EditArticlePage() {
   return (
     <div className="min-h-screen bg-gray-50">
       <AdminHeader />
-      <main className="container mx-auto px-4 py-8">
+      <main className="container mx-auto px-4 py-8 min-h-screen bg-black text-white">
         <h1 className="text-2xl font-bold mb-6">{params.id === "new" ? "Add New Article" : "Edit Article"}</h1>
         <ArticleForm article={article} />
       </main>

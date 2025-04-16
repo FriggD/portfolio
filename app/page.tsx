@@ -36,12 +36,12 @@ export default function Home() {
             >
               Projects
             </Link>
-            {/* <Link
+            <Link
               href="/blog"
               className="hover:text-cyan-400 transition-colors"
             >
               Blog
-            </Link> */}
+            </Link>
             <Link
               href="#contact"
               className="hover:text-cyan-400 transition-colors"
@@ -86,7 +86,7 @@ export default function Home() {
             </p>
             <div className="flex justify-center gap-4">
               <Link
-                href="#projects"
+                href="projects"
                 className="px-6 py-3 rounded-full bg-gradient-to-r from-pale_purple-400 to-pomp_and_power-500 text-white font-medium flex items-center gap-2 hover:opacity-90 transition-opacity"
               >
                 View Projects <ArrowRight size={18} />
@@ -183,7 +183,7 @@ export default function Home() {
       </section>
 
       {/* Blog Section */}
-      {/* <section id="blog" className="py-20 bg-black">
+      <section id="blog" className="py-20 bg-black">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold mb-12 text-center">
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-pale_purple-400 to-pomp_and_power-500">
@@ -192,25 +192,11 @@ export default function Home() {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <BlogPost
-              title="The Future of Web Development with AI"
-              excerpt="Exploring how artificial intelligence is transforming the landscape of web development and what it means for developers."
-              date="April 2, 2025"
+              title="Algoritmos Aleatorizados"
+              excerpt="Faça escolhas aleatórias durante sua execução para decidir o próximo passo."
+              date="April 16, 2025"
               image="/placeholder.svg?height=200&width=400"
-              slug="/blog/future-web-development-ai"
-            />
-            <BlogPost
-              title="Building Scalable Microservices Architecture"
-              excerpt="A deep dive into designing and implementing microservices that can scale with your application needs."
-              date="March 15, 2025"
-              image="/placeholder.svg?height=200&width=400"
-              slug="/blog/scalable-microservices"
-            />
-            <BlogPost
-              title="Optimizing React Performance"
-              excerpt="Practical techniques and best practices for improving the performance of your React applications."
-              date="February 28, 2025"
-              image="/placeholder.svg?height=200&width=400"
-              slug="/blog/react-performance"
+              slug="/blog/algoritmos-aleatorizados"
             />
           </div>
           <div className="text-center mt-12">
@@ -222,7 +208,7 @@ export default function Home() {
             </Link>
           </div>
         </div>
-      </section> */}
+      </section>
 
       {/* Contact Section */}
       <section id="contact" className="py-20 bg-zinc-950">

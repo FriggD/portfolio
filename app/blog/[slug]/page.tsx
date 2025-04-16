@@ -46,7 +46,7 @@ export default async function BlogPostPage({ params }: { params: { slug: string 
   const filteredRelatedArticles = relatedArticles.filter((relatedArticle) => relatedArticle.id !== article.id)
 
   return (
-    <div className="container mx-auto px-4 py-8">
+    <div className="min-h-screen bg-black text-white">
       <Link href="/blog" className="inline-flex items-center text-sm text-gray-600 hover:text-primary mb-6">
         <ArrowLeft className="w-4 h-4 mr-2" />
         Back to all articles
@@ -85,7 +85,8 @@ export default async function BlogPostPage({ params }: { params: { slug: string 
         </header>
 
         <div className="prose prose-lg max-w-none">
-          <ReactMarkdown>{article.content}</ReactMarkdown>
+          <div dangerouslySetInnerHTML={{ __html: article.content }} />
+          {/* <ReactMarkdown>{article.content}</ReactMarkdown> */}
         </div>
 
         <footer className="mt-12 pt-8 border-t border-gray-200">

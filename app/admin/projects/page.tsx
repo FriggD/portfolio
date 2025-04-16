@@ -84,7 +84,7 @@ export default function AdminProjectsPage() {
   return (
     <div className="min-h-screen bg-gray-50">
       <AdminHeader />
-      <main className="container mx-auto px-4 py-8">
+      <main className=" min-h-screen bg-black text-white">
         <div className="flex justify-between items-center mb-6">
           <h1 className="text-2xl font-bold">Projects</h1>
           <Link href="/admin/projects/new">
