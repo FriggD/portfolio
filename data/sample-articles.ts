@@ -5,8 +5,7 @@ const sampleArticles: Article[] = [
     id: 1,
     title: "Algoritmos Aleatorizados",
     slug: "algoritmos-aleatorizados",
-    excerpt:
-      "A comprehensive guide to setting up your first Next.js 14 application with the App Router.",
+    excerpt:"Como a aleatorização de algoritmos pode ser uma grande aliada",
     content: `
     <style>
   .article-content {
