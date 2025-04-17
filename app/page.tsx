@@ -195,7 +195,7 @@ export default function Home() {
               title="Algoritmos Aleatorizados"
               excerpt="Faça escolhas aleatórias durante sua execução para decidir o próximo passo."
               date="April 16, 2025"
-              image="/placeholder.svg?height=200&width=400"
+              image="/articles/dados.jpg?height=200&width=400"
               slug="/blog/algoritmos-aleatorizados"
             />
           </div>
