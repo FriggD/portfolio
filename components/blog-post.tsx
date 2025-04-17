@@ -22,7 +22,7 @@ export default function BlogPost({ title, excerpt, date, image, slug }: BlogPost
     >
       <div className="relative h-48 overflow-hidden min-h-screen bg-black">
         <img
-          src={image || "/placeholder.svg"}
+          src={image || "/placeholder.svg?height=400&width=600"}
           alt={title}
           className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
         />
