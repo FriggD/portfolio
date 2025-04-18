@@ -20,7 +20,7 @@ export default function BlogPost({ title, excerpt, date, image, slug }: BlogPost
       transition={{ duration: 0.5 }}
       className="bg-zinc-900 rounded-xl overflow-hidden border border-zinc-800 hover:border-pale_purple-400 transition-all duration-300 group"
     >
-      <div className="relative h-48 overflow-hidden min-h-screen bg-black">
+      <div className="relative h-48 overflow-hidden bg-black">
         <img
           src={image || "/placeholder.svg?height=400&width=600"}
           alt={title}
