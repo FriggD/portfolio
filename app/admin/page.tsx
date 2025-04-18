@@ -89,7 +89,7 @@ export default function AdminDashboard() {
   }
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="space-y-0">
       <AdminHeader />
       <main className="container mx-auto px-4 py-8">
         <h1 className="text-2xl font-bold mb-6">Admin Dashboard</h1>

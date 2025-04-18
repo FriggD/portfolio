@@ -3,14 +3,14 @@ import "./globals.css"
 import { Inter } from "next/font/google"
 import { ThemeProvider } from "@/components/theme-provider"
 import { ToastProvider } from "@/components/ui/use-toast"
-import { FaRegChessKnight } from "react-icons/fa6";
+import Template from "@/components/template"
 
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata = {
-  title:  "Frigg.Dev",
+  title: "Frigg.Dev",
   description: "Full-stack developer specializing in creating innovative digital experiences",
-    generator: 'v0.dev'
+  generator: 'v0.dev'
 }
 
 export default function RootLayout({
@@ -22,12 +22,11 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className={`${inter.className} min-h-screen bg-black text-white antialiased`}>
         <ThemeProvider attribute="class" defaultTheme="dark">
-          <ToastProvider>{children}</ToastProvider>
+          <ToastProvider>
+            <Template>{children}</Template>
+          </ToastProvider>
         </ThemeProvider>
       </body>
     </html>
   )
 }
-
-
-import './globals.css'

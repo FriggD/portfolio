@@ -47,10 +47,13 @@ export default async function BlogPostPage({ params }: { params: { slug: string 
 
   return (
     <div className="min-h-screen bg-black text-white">
-      <Link href="/blog" className="inline-flex items-center text-sm text-gray-600 hover:text-primary mb-6">
-        <ArrowLeft className="w-4 h-4 mr-2" />
-        Back to all articles
-      </Link>
+      {/* Back button */}
+      <div className="container mx-auto px-4 pt-32 pb-6">
+        <Link href="/blog" className="inline-flex items-center text-zinc-400 hover:text-cyan-400 transition-colors">
+          <ArrowLeft className="mr-2 h-4 w-4" />
+          Back to all blog articles
+        </Link>
+      </div>
 
       <article className="max-w-4xl mx-auto">
         <header className="mb-8">
