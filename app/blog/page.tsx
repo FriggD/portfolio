@@ -48,7 +48,7 @@ export default async function BlogPage({
             </span>
           </Link>
           <div className="hidden md:flex space-x-8">
-            <Link href="/#about" className="hover:text-cyan-400 transition-colors">
+            <Link href="/about" className="hover:text-cyan-400 transition-colors">
               About
             </Link>
             <Link href="/projects" className="hover:text-cyan-400 transition-colors">
@@ -57,7 +57,7 @@ export default async function BlogPage({
             <Link href="/blog" className="text-cyan-400 transition-colors">
               Blog
             </Link>
-            <Link href="/#contact" className="hover:text-cyan-400 transition-colors">
+            <Link href="/contact" className="hover:text-cyan-400 transition-colors">
               Contact
             </Link>
           </div>

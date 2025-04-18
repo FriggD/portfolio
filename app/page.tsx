@@ -192,11 +192,11 @@ export default function Home() {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <BlogPost
-              title="Algoritmos Aleatorizados"
-              excerpt="Faça escolhas aleatórias durante sua execução para decidir o próximo passo."
+              title="Randomized Algorithms"
+              slug="/blog/randomized-algorithms"
+              excerpt="How algorithm randomization can be a powerful ally"
               date="April 16, 2025"
               image="/articles/dados.jpg?height=400&width=600"
-              slug="/blog/algoritmos-aleatorizados"
             />
           </div>
           <div className="text-center mt-12">

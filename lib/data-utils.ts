@@ -32,9 +32,9 @@ export function getProjects(): Project[] {
 }
 
 // Project data functions
-export function getFeatured(): Project[] | null{
+export function getFeatured(): Project[] {
   const projects = getProjects()
-  return projects.filter((project) => project.featured === true) || null
+  return projects.filter((project) => project.featured === true) || []
 }
 
 export function getProjectById(id: number): Project | null {
@@ -72,7 +72,7 @@ export async function getArticles(options: GetArticlesOptions = {}): Promise<Art
   }
 
   if (options.tag) {
-    articles = articles.filter((article) => article.tags.includes(options.tag))
+    articles = articles.filter((article) => article.tags.includes(options.tag || ""))
   }
 
   if (options.featured !== undefined) {

@@ -3,9 +3,9 @@ import type { Article } from "@/lib/types";
 const sampleArticles: Article[] = [
   {
     id: 1,
-    title: "Algoritmos Aleatorizados",
-    slug: "algoritmos-aleatorizados",
-    excerpt:"Como a aleatorização de algoritmos pode ser uma grande aliada",
+    title: "Randomized Algorithms",
+    slug: "randomized-algorithms",
+    excerpt: "How algorithm randomization can be a powerful ally",
     content: `
     <style>
   .article-content {
@@ -66,31 +66,31 @@ const sampleArticles: Article[] = [
 </style>
 
     <div class="article-content">
-  <h1>Já ouviu sobre "Algoritmos Aleatorizados"?</h1>
+  <h1>Have You Heard About "Randomized Algorithms"?</h1>
   
-  </p>Você já se perguntou como sistemas de segurança conseguem ser imprevisíveis, ou como certos jogos geram desafios diferentes toda vez? Muitas dessas respostas estão nos algoritmos aleatorizados.<p>
+  <p>Have you ever wondered how security systems manage to be unpredictable, or how certain games generate different challenges every time? Many of these answers lie in randomized algorithms.</p>
   
-  <p>Em termos gerais, algoritmos aleatorizados são algoritmos que incorporam um elemento de aleatoriedade como parte de sua lógica. Em vez de seguir um conjunto estrito de passos determinísticos (algoritmos que sempre produzem os mesmos resultados para as mesmas entradas), eles fazem escolhas aleatórias durante sua execução para decidir o próximo passo. Isso geralmente é implementado usando um gerador de números aleatórios.</p>
+  <p>In general terms, randomized algorithms are algorithms that incorporate an element of randomness as part of their logic. Instead of following a strict set of deterministic steps (algorithms that always produce the same results for the same inputs), they make random choices during their execution to decide the next step. This is typically implemented using a random number generator.</p>
 
-  <h2>Por que usar algoritmos aleatorizados?</h2>
-  <p>Os algoritmos aleatorizados servem para diversos propósitos importantes:</p>
+  <h2>Why Use Randomized Algorithms?</h2>
+  <p>Randomized algorithms serve several important purposes:</p>
   <ul>
-    <li><strong>Quebra de simetria:</strong> A aleatoriedade pode ser útil para evitar que diferentes partes de um sistema tomem as mesmas decisões simultaneamente, como em protocolos de rede.</li>
-    <li><strong>Eficiência:</strong> Em muitas aplicações, algoritmos aleatorizados podem ser significativamente mais eficientes em termos de tempo de execução ou uso de memória do que os melhores algoritmos determinísticos conhecidos para o mesmo problema. Além disso, costumam ser mais simples de projetar e programar. Um exemplo é o algoritmo Quicksort aleatorizado, que escolhe os pivôs aleatoriamente e tem um tempo de execução esperado eficiente.</li>
-    <li><strong>Aproximação de soluções:</strong> Alguns algoritmos aleatorizados, conhecidos como algoritmos de Monte Carlo, são usados para obter aproximações de soluções para problemas complexos através de amostragem aleatória. Esses algoritmos podem ter uma pequena probabilidade de retornar uma resposta incorreta. Se a probabilidade de erro for suficientemente baixa, a melhoria na eficiência pode valer a pena.</li>
-    <li><strong>Verificação de igualdades:</strong> Algoritmos aleatorizados podem verificar igualdades algébricas ou matriciais de forma mais rápida do que os métodos determinísticos conhecidos.</li>
-    <li><strong>Encontrar estruturas em grafos:</strong> Por exemplo, algoritmos aleatorizados podem ser usados para encontrar um conjunto de corte mínimo em um grafo.</li>
-    <li><strong>Construção probabilística:</strong> O método probabilístico usa argumentos de aleatoriedade para provar a existência de certos objetos combinatórios, e essas provas podem às vezes ser convertidas em algoritmos aleatorizados eficientes para construir esses objetos.</li>
-    <li><strong>Teste probabilístico:</strong> Em áreas como criptografia, algoritmos aleatorizados são usados para testes probabilísticos, como testes de primalidade.</li>
+    <li><strong>Symmetry Breaking:</strong> Randomness can be useful to prevent different parts of a system from making the same decisions simultaneously, such as in network protocols.</li>
+    <li><strong>Efficiency:</strong> In many applications, randomized algorithms can be significantly more efficient in terms of execution time or memory usage than the best known deterministic algorithms for the same problem. They also tend to be simpler to design and program. An example is the randomized Quicksort algorithm, which randomly chooses pivots and has an efficient expected runtime.</li>
+    <li><strong>Solution Approximation:</strong> Some randomized algorithms, known as Monte Carlo algorithms, are used to obtain approximations of solutions to complex problems through random sampling. These algorithms may have a small probability of returning an incorrect answer. If the error probability is low enough, the improvement in efficiency may be worth it.</li>
+    <li><strong>Equality Verification:</strong> Randomized algorithms can verify algebraic or matrix equalities faster than known deterministic methods.</li>
+    <li><strong>Finding Graph Structures:</strong> For example, randomized algorithms can be used to find a minimum cut set in a graph.</li>
+    <li><strong>Probabilistic Construction:</strong> The probabilistic method uses randomness arguments to prove the existence of certain combinatorial objects, and these proofs can sometimes be converted into efficient randomized algorithms to construct these objects.</li>
+    <li><strong>Probabilistic Testing:</strong> In areas like cryptography, randomized algorithms are used for probabilistic testing, such as primality tests.</li>
   </ul>
 
-  <p>É importante notar que alguns algoritmos aleatorizados, chamados de algoritmos de <em>Las Vegas</em>, sempre retornam a resposta correta, mas seu tempo de execução é uma variável aleatória. Outros, os algoritmos de <em>Monte Carlo</em>, podem retornar uma resposta incorreta com uma certa probabilidade.</p>
+  <p>It's important to note that some randomized algorithms, called <em>Las Vegas</em> algorithms, always return the correct answer, but their execution time is a random variable. Others, the <em>Monte Carlo</em> algorithms, may return an incorrect answer with a certain probability.</p>
 
-  <h2>Exemplo: Randomized Quicksort</h2>
-  <p>Deixo aqui um exemplo de Quicksort aleatorizado (Randomized Quicksort). Analisando o número esperado de comparações entre elementos durante a ordenação, chegamos que o número total de comparações depende de:</p>
+  <h2>Example: Randomized Quicksort</h2>
+  <p>Here's an example of Randomized Quicksort. Analyzing the expected number of comparisons between elements during sorting, we find that the total number of comparisons depends on:</p>
   <ul>
-    <li>Quão balanceadas são essas divisões;</li>
-    <li>Quantas vezes cada elemento é comparado com os outros ao longo das chamadas recursivas.</li>
+    <li>How balanced these divisions are;</li>
+    <li>How many times each element is compared with others throughout recursive calls.</li>
   </ul>
 
   <pre><code class="language-python">
@@ -100,51 +100,50 @@ def randomized_quicksort(arr):
     if len(arr) <= 1:
         return arr
 
-    # Escolhe um pivô aleatoriamente
+    # Choose a pivot randomly
     pivot_index = random.randint(0, len(arr) - 1)
     pivot = arr[pivot_index]
 
-    # Divide a lista em três partes
+    # Divide the list into three parts
     less = [x for x in arr if x < pivot]
     equal = [x for x in arr if x == pivot]
     greater = [x for x in arr if x > pivot]
 
-    # Recursão
+    # Recursion
     return randomized_quicksort(less) + equal + randomized_quicksort(greater)
 
-# Exemplo de uso
+# Usage example
 if __name__ == "__main__":
-    lista = [9, 3, 7, 1, 4, 2, 8, 5, 6]
-    print("Lista original:", lista)
-    ordenada = randomized_quicksort(lista)
-    print("Lista ordenada:", ordenada)
+    array = [9, 3, 7, 1, 4, 2, 8, 5, 6]
+    print("Original array:", array)
+    sorted_array = randomized_quicksort(array)
+    print("Sorted array:", sorted_array)
   </code></pre>
 
-  <h2>Complexidade</h2>
-  <p>Comentando sobre a complexidade de tempo do Quicksort, temos que a complexidade de tempo esperada do Quicksort aleatorizado para ordenar uma lista de <em>n</em> números distintos é de <code>O(n log n)</code>. Isso significa que, em média, o número de comparações realizadas pelo algoritmo cresce proporcionalmente a <em>n</em> multiplicado pelo logaritmo de <em>n</em>.</p>
+  <h2>Complexity</h2>
+  <p>Regarding Quicksort's time complexity, the expected time complexity of randomized Quicksort for sorting a list of <em>n</em> distinct numbers is <code>O(n log n)</code>. This means that, on average, the number of comparisons performed by the algorithm grows proportionally to <em>n</em> multiplied by the logarithm of <em>n</em>.</p>
 
-  <p>No pior caso, o que é bem difícil de acontecer na versão aleatorizada, o Quicksort pode ter uma complexidade de tempo de <code>O(n^2)</code>. Isso ocorre, por exemplo, se o pivô escolhido repetidamente for um dos menores ou maiores elementos da lista. Embora exista um algoritmo determinístico relativamente complexo que encontra a mediana em tempo <code>O(n)</code>, o Quicksort aleatorizado é uma alternativa mais simples com um fator constante menor no tempo de execução linear.</p>
+  <p>In the worst case, which is quite unlikely to happen in the randomized version, Quicksort can have a time complexity of <code>O(n^2)</code>. This occurs, for example, if the chosen pivot is repeatedly one of the smallest or largest elements in the list. Although there exists a relatively complex deterministic algorithm that finds the median in <code>O(n)</code> time, randomized Quicksort is a simpler alternative with a smaller constant factor in linear execution time.</p>
 
-  <h2>Quando utilizar?</h2>
-  <p>É interessante considerar o uso do Randomized Quicksort quando:</p>
+  <h2>When to Use It?</h2>
+  <p>It's interesting to consider using Randomized Quicksort when:</p>
   <ul>
-    <li>Você quer desempenho médio confiável, mesmo com entradas difíceis.</li>
-    <li>A entrada é muito variada ou imprevisível.</li>
-    <li>O desempenho prático importa mais do que a estabilidade.</li>
-    <li>Está em um sistema onde o espaço é importante (por ser in-place).</li>
+    <li>You want reliable average performance, even with difficult inputs.</li>
+    <li>The input is highly varied or unpredictable.</li>
+    <li>Practical performance matters more than stability.</li>
+    <li>You're in a system where space is important (due to being in-place).</li>
   </ul>
 
-  <p>Alguns cuidados precisam ser tomados, como evitar pseudo-aleatoriedade previsível se a segurança for um fator, ou chamadas repetidas para <code>random.randint()</code>, que adicionam um pequeno overhead, embora geralmente insignificante. Também é importante lembrar que o algoritmo não é estável.</p>
+  <p>Some precautions need to be taken, such as avoiding predictable pseudo-randomness if security is a factor, or repeated calls to <code>random.randint()</code>, which add a small overhead, although usually insignificant. It's also important to remember that the algorithm is not stable.</p>
 
-   <h2>Para saber mais:</h2>
+   <h2>To Learn More:</h2>
 <ul>
-    <li>Probability and Computing de Michael Mitzenmacher.</li>
+    <li>Probability and Computing by Michael Mitzenmacher.</li>
 <ul>
   </div>
-
       `,
-    category: "Ciencia da Computação",
-    tags: ["Algoritmos", "Aleatorios"],
+    category: "Computer Science",
+    tags: ["Algorithms", "Random"],
     image: "/articles/dados.jpg?height=400&width=800",
     featured: true,
     status: "Published",
