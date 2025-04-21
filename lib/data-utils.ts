@@ -4,6 +4,7 @@ import type { Project, Article } from "./types"
 import sampleArticles from "@/data/sample-articles"
 import sampleProjects from "@/data/sample-projects"
 
+
 // Define paths for data files
 const DATA_DIR = path.join(process.cwd(), "data")
 const PROJECTS_FILE = path.join(DATA_DIR, "projects.json")

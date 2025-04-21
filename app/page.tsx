@@ -141,6 +141,13 @@ export default function Home() {
               date="April 16, 2025"
               image="/articles/dados.jpg?height=400&width=600"
             />
+            <BlogPost
+              title="Dirichlet's Drawer Principle"
+              slug="/blog/dirichlets-drawer-principle"
+              excerpt="How to detect a uniqueness rule violation problem"
+              date="April 21, 2025"
+              image="/articles/_pigeonhole.png?height=400&width=600"
+            />
           </div>
           <div className="text-center mt-12">
             <Link
