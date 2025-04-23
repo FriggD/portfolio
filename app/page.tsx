@@ -211,9 +211,6 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            {/* <div>
-              <ContactForm />
-            </div> */}
           </div>
         </div>
       </section>

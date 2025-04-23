@@ -37,6 +37,12 @@ export default function Template({ children }: TemplateProps) {
               Blog
             </Link>
             <Link
+              href="/resume"
+              className="hover:text-cyan-400 transition-colors"
+            >
+              Resume
+            </Link>
+            <Link
               href="/#contact"
               className="hover:text-cyan-400 transition-colors"
             >

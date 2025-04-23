@@ -1,0 +1,66 @@
+@media print {
+  /* Hide navigation, footer and buttons when printing */
+  nav, footer, button, a[download] {
+    display: none !important;
+  }
+  
+  /* Reset background colors and text colors for printing */
+  body, .bg-black, .bg-zinc-950 {
+    background-color: white !important;
+    color: black !important;
+  }
+  
+  /* Make sure the content is not cut off between pages */
+  .mb-10, .mb-8, .mb-6 {
+    margin-bottom: 20px !important;
+    page-break-inside: avoid;
+  }
+  
+  /* Ensure headers are not separated from their content */
+  h1, h2, h3 {
+    page-break-after: avoid;
+    color: #333 !important;
+  }
+  
+  /* Make sure lists don't break across pages */
+  ul, li {
+    page-break-inside: avoid;
+  }
+  
+  /* Adjust spacing for print */
+  .container {
+    padding: 0 !important;
+    margin: 0 !important;
+    max-width: 100% !important;
+  }
+  
+  /* Remove padding from the top */
+  .pt-32 {
+    padding-top: 0 !important;
+  }
+  
+  /* Make gradient text visible in print */
+  .bg-clip-text.text-transparent.bg-gradient-to-r {
+    background-clip: initial !important;
+    -webkit-background-clip: initial !important;
+    text-fill-color: initial !important;
+    -webkit-text-fill-color: initial !important;
+    color: #333 !important;
+    background: none !important;
+  }
+  
+  /* Adjust text colors for better print visibility */
+  .text-zinc-300, .text-zinc-400, .text-white, .text-cyan-400 {
+    color: #333 !important;
+  }
+  
+  /* Add a border to the resume card for better print definition */
+  .border-zinc-800 {
+    border-color: #ddd !important;
+  }
+  
+  /* Remove shadows */
+  .shadow-lg {
+    box-shadow: none !important;
+  }
+}
