@@ -30,7 +30,7 @@ export default function ResumePage() {
       {/* Resume Content */}
       <section className="py-12 bg-black">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto bg-zinc-950 rounded-lg p-8 shadow-lg border border-zinc-800">
+          <div id="resume-content" className="max-w-4xl mx-auto bg-zinc-950 rounded-lg p-8 shadow-lg border border-zinc-800">
             {/* Personal Information */}
             <div className="mb-10">
               <h2 className="text-2xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-pale_purple-400 to-pomp_and_power-500">
@@ -105,6 +105,7 @@ export default function ResumePage() {
               {/* Experience Items */}
               <div className="grid grid-cols-3 md:grid-cols-2 gap-4">
                 <div>
+                <hr style={{marginBottom:"1em"}}></hr>
                   <h3 className="text-xl font-semibold mb-2">
                     Quality Assurance
                   </h3>
@@ -123,6 +124,7 @@ export default function ResumePage() {
                 </p>
 
                 <div>
+                <hr style={{marginBottom:"1em"}}></hr>
                   <h3 className="text-xl font-semibold mb-2">Agile Master</h3>
                   <p className="text-zinc-400 mb-1">Selbetti Tecnologia</p>
                   <p className="text-zinc-400 mb-1">Mar/2023 – Mar/2024</p>
@@ -139,6 +141,7 @@ export default function ResumePage() {
                 </p>
 
                 <div>
+                <hr style={{marginBottom:"1em"}}></hr>
                   <h3 className="text-xl font-semibold mb-2">
                     Systems Analyst (Fullstack)
                   </h3>
@@ -159,6 +162,7 @@ export default function ResumePage() {
                 </p>
 
                 <div>
+                <hr style={{marginBottom:"1em"}}></hr>
                   <h3 className="text-xl font-semibold mb-2">
                     Systems Analyst
                   </h3>
@@ -175,6 +179,7 @@ export default function ResumePage() {
                   </span>
                 </p>
                 <div>
+                <hr style={{marginBottom:"1em"}}></hr>
                   <h3 className="text-xl font-semibold mb-2">
                     Project Director
                   </h3>
@@ -189,6 +194,7 @@ export default function ResumePage() {
                 </p>
 
                 <div>
+                <hr style={{marginBottom:"1em"}}></hr>
                   <h3 className="text-xl font-semibold mb-2">
                     Computer Instructor
                   </h3>

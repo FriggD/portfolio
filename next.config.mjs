@@ -27,6 +27,18 @@ const nextConfig = {
     parallelServerBuildTraces: true,
     parallelServerCompiles: true,
   },
+  webpack: (config, { isServer }) => {
+    // Only include html2pdf.js in client bundles
+    if (!isServer) {
+      config.resolve.fallback = {
+        ...config.resolve.fallback,
+        fs: false,
+        path: false,
+        canvas: false,
+      };
+    }
+    return config;
+  },
 }
 
 if (userConfig) {
@@ -49,3 +61,4 @@ if (userConfig) {
 }
 
 export default nextConfig
+

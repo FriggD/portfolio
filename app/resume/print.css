@@ -64,3 +64,51 @@
     box-shadow: none !important;
   }
 }
+
+/* Styles for PDF export */
+.pdf-export {
+  background-color: white !important;
+  color: black !important;
+}
+
+.pdf-export .bg-black, 
+.pdf-export .bg-zinc-950 {
+  background-color: white !important;
+}
+
+.pdf-export .bg-clip-text.text-transparent.bg-gradient-to-r {
+  background-clip: initial !important;
+  -webkit-background-clip: initial !important;
+  text-fill-color: initial !important;
+  -webkit-text-fill-color: initial !important;
+  color: #333 !important;
+  background: none !important;
+}
+
+.pdf-export .text-zinc-300, 
+.pdf-export .text-zinc-400, 
+.pdf-export .text-white, 
+.pdf-export .text-cyan-400 {
+  color: #333 !important;
+}
+
+.pdf-export .border-zinc-800 {
+  border-color: #ddd !important;
+}
+
+.pdf-export .shadow-lg {
+  box-shadow: none !important;
+}
+
+/* Ensure proper spacing in PDF */
+.pdf-export .mb-10, 
+.pdf-export .mb-8, 
+.pdf-export .mb-6 {
+  margin-bottom: 20px !important;
+}
+
+/* Adjust links for PDF */
+.pdf-export a {
+  color: #0066cc !important;
+  text-decoration: underline !important;
+}
