@@ -62,7 +62,7 @@ export default function ProjectPage({ params }: ProjectPageProps) {
 
       {/* Project Header */}
       <header className="container mx-auto px-4 pb-12">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+        <div className="grid grid-cols-2 lg:grid-cols-3 gap-8 items-center">
           <div>
             <h1 className="text-4xl md:text-5xl font-bold mb-4">{project.title}</h1>
             <p className="text-zinc-400 text-lg mb-6">{project.description}</p>
@@ -97,7 +97,7 @@ export default function ProjectPage({ params }: ProjectPageProps) {
             </div>
           </div>
 
-          <div className="relative rounded-xl overflow-hidden border border-zinc-800">
+          <div className="relative rounded-xl overflow-hidden border border-zinc-800 col-span-2">
             <Image
               src={project.image || "/placeholder.svg?height=600&width=800"}
               alt={project.title}
