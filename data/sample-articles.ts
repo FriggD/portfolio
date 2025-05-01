@@ -392,7 +392,7 @@ for user, machines in active_sessions.items():
             print(f"Round {i+1}: success on attempt</br>                  {attempts_until_success(0.2)}") 
     </code></pre> 
     <h2>Key Phrase</h2> 
-    <p><strong>"Forget the mistakes of the past — focus on what is yet to come."</strong> This is the essence of the memoryless property: nothing that has already happened changes what can still happen.</p> 
+    <p><strong>Forget the mistakes of the past, focus on what is yet to come.</strong> This is the essence of the memoryless property: nothing that has already happened changes what can still happen.</p> 
     <h2>Additional Source</h2> 
     <ul> 
         <li><a href="https://www.sciencedirect.com/topics/mathematics/memoryless-property" target="_blank">Memoryless Property</a></li> 
@@ -403,7 +403,7 @@ for user, machines in active_sessions.items():
       `,
     category: "Math",
     tags: ["Memoryless", "Geometric Distribution"],
-    image: "/articles/.png?height=400&width=800",
+    image: "/articles/memoryless.png?height=400&width=800",
     featured: true,
     status: "Published",
     date: "April 30, 2025",

@@ -133,6 +133,7 @@ export default function Home() {
               Latest Articles
             </span>
           </h2>
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <BlogPost
               title="Randomized Algorithms"
@@ -147,6 +148,13 @@ export default function Home() {
               excerpt="How to detect a uniqueness rule violation problem"
               date="April 21, 2025"
               image="/articles/_pigeonhole.png?height=400&width=600"
+            />
+            <BlogPost
+              title="Memoryless Property"
+              slug="/blog/memoryless"
+              excerpt="How Math can encourage you not to give up"
+              date="April 30, 2025"
+              image="/articles/memoryless.png?height=400&width=600"
             />
           </div>
           <div className="text-center mt-12">
