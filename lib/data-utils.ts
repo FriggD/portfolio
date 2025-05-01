@@ -103,6 +103,24 @@ export async function getArticles(options: GetArticlesOptions = {}): Promise<Art
   return articles
 }
 
+// Article data functions
+export function getLatestArticles(options: GetArticlesOptions = {}): Article[] {
+  // Use the sample articles instead of fetching from an API
+  let articles = [...sampleArticles]
+ 
+  // Sort articles by date (newest first)
+  articles.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
+
+  // Apply pagination
+  if (options.limit) {
+    const start = options.offset || 0
+    const end = start + options.limit
+    articles = articles.slice(start, end)
+  }
+
+  return articles
+}
+
 export async function getArticleBySlug(slug: string): Promise<Article | null> {
   const article = sampleArticles.find((article) => article.slug === slug)
   return article || null

@@ -4,11 +4,12 @@ import TechCarousel from "@/components/tech-carousel";
 import ProjectCard from "@/components/project-card";
 import BlogPost from "@/components/blog-post";
 import { Button } from "@/components/ui/button";
-import { getFeatured } from "@/lib/data-utils"
+import { getFeatured, getLatestArticles } from "@/lib/data-utils"
 
 export default function Home() {
   const isSubmitting = false; // Placeholder for form submission state
   const featuredProjects = getFeatured()
+  const latestArticles = getLatestArticles({ limit: 3 }) || []
 
   return (
     <div className="space-y-0">
@@ -135,7 +136,17 @@ export default function Home() {
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <BlogPost
+            {latestArticles.map((article) => (
+              <BlogPost
+                key={article.id}
+                title={article.title}
+                excerpt={article.excerpt}
+                date={article.date}
+                image={article.image}
+                slug={article.slug}
+              />
+            ))}
+            {/* <BlogPost
               title="Randomized Algorithms"
               slug="/blog/randomized-algorithms"
               excerpt="How algorithm randomization can be a powerful ally"
@@ -155,7 +166,7 @@ export default function Home() {
               excerpt="How Math can encourage you not to give up"
               date="April 30, 2025"
               image="/articles/memoryless.png?height=400&width=600"
-            />
+            /> */}
           </div>
           <div className="text-center mt-12">
             <Link
