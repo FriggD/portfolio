@@ -265,7 +265,7 @@ const sampleProjects: Project[] = [
       <ul>
         <li>CRUD superheroes;</li>
         <li>CRUD superpowers;</li>
-        <li>Associate multiple superpowers to a heros;</li>
+        <li>Associate multiple superpowers to heros;</li>
         <li>Responsive and user-friendly user interface;</li>
         <li>Documented RESTful API with Swagger.</li>
       </ul>
