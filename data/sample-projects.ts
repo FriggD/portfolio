@@ -216,7 +216,7 @@ const sampleProjects: Project[] = [
     id: 4,
     title: "SuperHero APP",
     slug: "superhero-app",
-    description: "Simple CRUD os Heroes with Superpowers.",
+    description: "Simple CRUD of Heroes with Superpowers.",
     content: `
 <style>
   .project-content {
