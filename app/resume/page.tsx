@@ -107,16 +107,32 @@ export default function ResumePage() {
                 <div>
                 <hr style={{marginBottom:"1em"}}></hr>
                   <h3 className="text-xl font-semibold mb-2">
+                    Systems Developer
+                  </h3>
+                  <p className="text-zinc-400 mb-1">Viceri SEIDOR</p>
+                  <p className="text-zinc-400 mb-1">Jun/2025 – Current</p>
+                </div>
+                <p className="text-zinc-300">
+                  Fullstack development of web applications with .NET, C# and JavaScript. 
+                  Data persistence using Entity Framework and integration with relational 
+                  and non-relational databases. Development and consumption of REST APIs. 
+                  Use of Azure Storage for cloud storage and Azure DevOps and Github for 
+                  code versioning, task management and delivery tracking. Participation 
+                  in the creation and maintenance of CI/CD pipelines.
+                </p>
+
+                <div>
+                <hr style={{marginBottom:"1em"}}></hr>
+                  <h3 className="text-xl font-semibold mb-2">
                     Quality Assurance
                   </h3>
                   <p className="text-zinc-400 mb-1">Selbetti Tecnologia</p>
-                  <p className="text-zinc-400 mb-1">Mar/2024 – Present</p>
+                  <p className="text-zinc-400 mb-1">Mar/2024 – May/2025</p>
                 </div>
                 <p className="text-zinc-300">
-                  Performed manual tests and validated functionalities of
-                  systems integrated with WebServices. Manipulated data in XML
-                  and PostgreSQL/MySQL databases to support testing. Created
-                  test plans and used AWS Lambda for validation.
+                  Execution of manual tests and validation of functionalities in systems 
+                  integrated with WebServices. Data manipulation in XML and Oracle/MySQL 
+                  databases. Creation of test plans and application of tests with AWS Lambda.
                   <span className="block mt-1">
                     <strong>Result:</strong> Increased manual test coverage to
                     100% of released features.
@@ -130,10 +146,8 @@ export default function ResumePage() {
                   <p className="text-zinc-400 mb-1">Mar/2023 – Mar/2024</p>
                 </div>
                 <p className="text-zinc-300">
-                  Facilitated agile ceremonies (Scrum), promoting continuous
-                  improvement and alignment with stakeholders. Applied
-                  performance metrics and supported strategic technical
-                  decisions.
+                  Facilitator of agile teams with focus on continuous improvement and 
+                  predictability. Conducting Scrum ceremonies and applying agile performance metrics.
                   <span className="block mt-1">
                     <strong>Result:</strong> Coordinated 4 agile teams
                     simultaneously (4 to 10 members) effectively.
@@ -151,9 +165,12 @@ export default function ResumePage() {
                   <p className="text-zinc-400 mb-1">Dec/2020 – Jan/2023</p>
                 </div>
                 <p className="text-zinc-300">
-                  Developed applications with Angular, .NET, C# and Python.
-                  Worked with GitLab, Jira and TFS/Azure. Supported PO and SM in
-                  delivering scalable solutions.
+                  Development and maintenance of web systems in Angular and .NET for 
+                  management of purebred cattle farms (Wagyu and Jersey), covering official 
+                  certification, government records, traceability and production processes. 
+                  Responsible for the evolution and maintenance of specialized platforms for 
+                  productive and reproductive management of dairy herds using .NET and Razor. 
+                  Data manipulation and modeling using SQL Server and PostgreSQL.
                   <span className="block mt-1">
                     <strong>Result:</strong> Improved usability by implementing
                     a dairy production spreadsheet importer with multiple
@@ -167,30 +184,31 @@ export default function ResumePage() {
                     Systems Analyst
                   </h3>
                   <p className="text-zinc-400 mb-1">NTI – UEPG</p>
-                  <p className="text-zinc-400 mb-1">May/2019 – May/2020</p>
+                  <p className="text-zinc-400 mb-1">Nov/2019 – May/2020</p>
                 </div>
                 <p className="text-zinc-300">
-                  Development and maintenance of systems in Laravel and MySQL.
-                  Work on data modeling and requirements analysis.
+                  Development and maintenance of systems with Laravel and MySQL. 
+                  Data modeling and requirements analysis.
                   <span className="block mt-1">
                     <strong>Result:</strong> Implemented and documented the use
                     of the new virtual store of the University Publisher,
                     promoting user autonomy.
                   </span>
                 </p>
+
                 <div>
                 <hr style={{marginBottom:"1em"}}></hr>
                   <h3 className="text-xl font-semibold mb-2">
-                    Project Director
+                    Project Director / Administrative-Financial Director
                   </h3>
                   <p className="text-zinc-400 mb-1">
                     E²C Junior Company of Computer Engineering
                   </p>
-                  <p className="text-zinc-400 mb-1">2019 – 2021</p>
+                  <p className="text-zinc-400 mb-1">Dec/2019 – Dec/2021</p>
                 </div>
                 <p className="text-zinc-300">
-                  Coordinated projects with ReactJS, NodeJS and React Native.
-                  Management of finances, talents and budgets.
+                  Project coordination with React JS, Node JS and React Native. 
+                  Financial, budgetary and talent management.
                 </p>
 
                 <div>
@@ -198,12 +216,12 @@ export default function ResumePage() {
                   <h3 className="text-xl font-semibold mb-2">
                     Computer Instructor
                   </h3>
-                  <p className="text-zinc-400 mb-1">APAM</p>
+                  <p className="text-zinc-400 mb-1">Association for Girl Promotion (APAM)</p>
                   <p className="text-zinc-400 mb-1">Apr/2018 – Nov/2018</p>
                 </div>
                 <p className="text-zinc-300">
-                  Basic computer classes and digital inclusion for youth and
-                  adults.
+                  Teaching basic computer concepts and digital inclusion for 
+                  children and pre-adolescents.
                   <span className="block mt-1">
                     <strong>Result:</strong> Taught pre-teens to identify and
                     research reliable sources on the internet.
@@ -219,19 +237,15 @@ export default function ResumePage() {
               </h2>
               <ul className="list-disc list-inside text-zinc-300 space-y-2">
                 <li>
-                  <strong>UTFPR:</strong> Master's degree in Computer Science
-                  (in progress)
-                </li>
-                <li>
                   <strong>Faculdade Descomplica:</strong> Post-graduation in
-                  Data Analysis (in progress)
+                  Data Analysis (Sep/2024 – Jun/2025)
                 </li>
                 <li>
                   <strong>Faculdade Descomplica:</strong> MBA in Project
-                  Management and Agile Methodologies
+                  Management and Agile Methodologies (Nov/2023 – Sep/2024)
                 </li>
                 <li>
-                  <strong>UEPG:</strong> Computer Engineering (2017 – 2023)
+                  <strong>UEPG:</strong> Bachelor's degree in Computer Engineering (2017 – 2023)
                 </li>
               </ul>
             </div>
