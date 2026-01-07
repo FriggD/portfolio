@@ -1,67 +1,185 @@
 @media print {
   /* Hide navigation, footer and buttons when printing */
-  nav, footer, button, a[download] {
+  nav, footer, button, a[download], header {
     display: none !important;
+  }
+  
+  /* Reset page margins and setup */
+  @page {
+    margin: 0.5in;
+    size: A4;
   }
   
   /* Reset background colors and text colors for printing */
   body, .bg-black, .bg-zinc-950 {
     background-color: white !important;
     color: black !important;
+    font-family: 'Arial', 'Helvetica', sans-serif !important;
+    font-size: 11pt !important;
+    line-height: 1.4 !important;
   }
   
-  /* Make sure the content is not cut off between pages */
-  .mb-10, .mb-8, .mb-6 {
-    margin-bottom: 20px !important;
-    page-break-inside: avoid;
-  }
-  
-  /* Ensure headers are not separated from their content */
-  h1, h2, h3 {
-    page-break-after: avoid;
-    color: #333 !important;
-  }
-  
-  /* Make sure lists don't break across pages */
-  ul, li {
-    page-break-inside: avoid;
-  }
-  
-  /* Adjust spacing for print */
+  /* Container adjustments */
   .container {
     padding: 0 !important;
     margin: 0 !important;
     max-width: 100% !important;
   }
   
-  /* Remove padding from the top */
-  .pt-32 {
+  /* Remove top padding */
+  .pt-32, .py-12 {
     padding-top: 0 !important;
+    padding-bottom: 0 !important;
   }
   
-  /* Make gradient text visible in print */
+  /* Resume content styling */
+  #resume-content {
+    background-color: white !important;
+    border: none !important;
+    border-radius: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    box-shadow: none !important;
+    max-width: 100% !important;
+  }
+  
+  /* Headers styling */
+  h1 {
+    font-size: 24pt !important;
+    font-weight: bold !important;
+    color: #000 !important;
+    margin-bottom: 8pt !important;
+    text-align: center !important;
+  }
+  
+  h2 {
+    font-size: 14pt !important;
+    font-weight: bold !important;
+    color: #000 !important;
+    margin-top: 16pt !important;
+    margin-bottom: 8pt !important;
+    border-bottom: 1pt solid #000 !important;
+    padding-bottom: 2pt !important;
+    page-break-after: avoid;
+  }
+  
+  h3 {
+    font-size: 12pt !important;
+    font-weight: bold !important;
+    color: #000 !important;
+    margin-top: 8pt !important;
+    margin-bottom: 4pt !important;
+    page-break-after: avoid;
+  }
+  
+  /* Remove gradient text effects */
   .bg-clip-text.text-transparent.bg-gradient-to-r {
     background-clip: initial !important;
     -webkit-background-clip: initial !important;
     text-fill-color: initial !important;
     -webkit-text-fill-color: initial !important;
-    color: #333 !important;
+    color: #000 !important;
     background: none !important;
   }
   
-  /* Adjust text colors for better print visibility */
-  .text-zinc-300, .text-zinc-400, .text-white, .text-cyan-400 {
+  /* Text color adjustments */
+  .text-zinc-300, .text-zinc-400, .text-white {
     color: #333 !important;
   }
   
-  /* Add a border to the resume card for better print definition */
-  .border-zinc-800 {
-    border-color: #ddd !important;
+  .text-cyan-400 {
+    color: #0066cc !important;
+    text-decoration: underline !important;
   }
   
-  /* Remove shadows */
-  .shadow-lg {
-    box-shadow: none !important;
+  /* Spacing adjustments */
+  .mb-10 {
+    margin-bottom: 12pt !important;
+    page-break-inside: avoid;
+  }
+  
+  .mb-8 {
+    margin-bottom: 8pt !important;
+  }
+  
+  .mb-4 {
+    margin-bottom: 4pt !important;
+  }
+  
+  .mb-2 {
+    margin-bottom: 2pt !important;
+  }
+  
+  .mb-1 {
+    margin-bottom: 1pt !important;
+  }
+  
+  /* Grid layout adjustments for print */
+  .grid {
+    display: block !important;
+  }
+  
+  .grid-cols-3, .grid-cols-2 {
+    display: block !important;
+  }
+  
+  /* Experience items layout */
+  .grid > div:nth-child(odd) {
+    margin-top: 8pt !important;
+    margin-bottom: 4pt !important;
+  }
+  
+  .grid > p {
+    margin-bottom: 8pt !important;
+  }
+  
+  /* List styling */
+  ul {
+    margin: 0 !important;
+    padding-left: 16pt !important;
+    page-break-inside: avoid;
+  }
+  
+  li {
+    margin-bottom: 2pt !important;
+    page-break-inside: avoid;
+  }
+  
+  /* Remove horizontal rules */
+  hr {
+    display: none !important;
+  }
+  
+  /* Personal information grid */
+  .grid-cols-1.md\:grid-cols-2 {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 8pt !important;
+  }
+  
+  /* Strong text styling */
+  strong {
+    font-weight: bold !important;
+    color: #000 !important;
+  }
+  
+  /* Links */
+  a {
+    color: #0066cc !important;
+    text-decoration: underline !important;
+  }
+  
+  /* Ensure proper page breaks */
+  .page-break-before {
+    page-break-before: always !important;
+  }
+  
+  .page-break-after {
+    page-break-after: always !important;
+  }
+  
+  .page-break-inside-avoid {
+    page-break-inside: avoid !important;
   }
 }
 
@@ -69,6 +187,19 @@
 .pdf-export {
   background-color: white !important;
   color: black !important;
+  font-family: 'Arial', 'Helvetica', sans-serif !important;
+  font-size: 12px !important;
+  line-height: 1.5 !important;
+  padding: 20px !important;
+  margin: 0 !important;
+  border: none !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  max-width: 100% !important;
+}
+
+.pdf-export * {
+  color: inherit !important;
 }
 
 .pdf-export .bg-black, 
@@ -76,39 +207,141 @@
   background-color: white !important;
 }
 
-.pdf-export .bg-clip-text.text-transparent.bg-gradient-to-r {
+.pdf-export .bg-clip-text.text-transparent.bg-gradient-to-r,
+.pdf-export .bg-clip-text {
   background-clip: initial !important;
   -webkit-background-clip: initial !important;
   text-fill-color: initial !important;
   -webkit-text-fill-color: initial !important;
-  color: #333 !important;
+  color: #000 !important;
   background: none !important;
 }
 
 .pdf-export .text-zinc-300, 
 .pdf-export .text-zinc-400, 
-.pdf-export .text-white, 
-.pdf-export .text-cyan-400 {
+.pdf-export .text-white {
   color: #333 !important;
 }
 
-.pdf-export .border-zinc-800 {
-  border-color: #ddd !important;
+.pdf-export .text-cyan-400 {
+  color: #0066cc !important;
+  text-decoration: underline !important;
 }
 
-.pdf-export .shadow-lg {
-  box-shadow: none !important;
+.pdf-export h1 {
+  font-size: 22px !important;
+  font-weight: bold !important;
+  color: #000 !important;
+  margin: 0 0 10px 0 !important;
+  text-align: center !important;
+  page-break-after: avoid !important;
 }
 
-/* Ensure proper spacing in PDF */
-.pdf-export .mb-10, 
-.pdf-export .mb-8, 
-.pdf-export .mb-6 {
+.pdf-export h2 {
+  font-size: 16px !important;
+  font-weight: bold !important;
+  color: #000 !important;
+  margin: 20px 0 10px 0 !important;
+  border-bottom: 1px solid #000 !important;
+  padding-bottom: 3px !important;
+  page-break-after: avoid !important;
+}
+
+.pdf-export h3 {
+  font-size: 14px !important;
+  font-weight: bold !important;
+  color: #000 !important;
+  margin: 15px 0 5px 0 !important;
+  page-break-after: avoid !important;
+}
+
+.pdf-export p {
+  margin: 0 0 8px 0 !important;
+  font-size: 12px !important;
+  line-height: 1.4 !important;
+}
+
+.pdf-export .space-y-6 > * + * {
+  margin-top: 15px !important;
+}
+
+.pdf-export .page-break-inside-avoid {
+  page-break-inside: avoid !important;
+  margin-bottom: 15px !important;
+}
+
+.pdf-export .mb-10 {
   margin-bottom: 20px !important;
 }
 
-/* Adjust links for PDF */
+.pdf-export .mb-8 {
+  margin-bottom: 15px !important;
+}
+
+.pdf-export .mb-4 {
+  margin-bottom: 8px !important;
+}
+
+.pdf-export .mb-2 {
+  margin-bottom: 5px !important;
+}
+
+.pdf-export .mb-1 {
+  margin-bottom: 3px !important;
+}
+
+.pdf-export .mt-1 {
+  margin-top: 3px !important;
+}
+
+.pdf-export ul {
+  margin: 0 0 10px 0 !important;
+  padding-left: 20px !important;
+  list-style-type: disc !important;
+}
+
+.pdf-export li {
+  margin-bottom: 5px !important;
+  font-size: 12px !important;
+  line-height: 1.4 !important;
+}
+
+.pdf-export strong {
+  font-weight: bold !important;
+  color: #000 !important;
+}
+
 .pdf-export a {
   color: #0066cc !important;
   text-decoration: underline !important;
+}
+
+.pdf-export .grid-cols-1.md\:grid-cols-2 {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  gap: 10px !important;
+  margin-bottom: 15px !important;
+}
+
+.pdf-export .grid-cols-1.md\:grid-cols-2 > div {
+  margin-bottom: 8px !important;
+}
+
+.pdf-export .text-center {
+  text-align: center !important;
+}
+
+.pdf-export .text-lg {
+  font-size: 14px !important;
+}
+
+.pdf-export .block {
+  display: block !important;
+}
+
+/* Remove any remaining dark backgrounds */
+.pdf-export .bg-gradient-to-b,
+.pdf-export .from-zinc-950,
+.pdf-export .to-black {
+  background: white !important;
 }
