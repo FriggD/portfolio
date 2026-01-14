@@ -5,9 +5,11 @@ import chaosEngineeringArticle from "./chaos-engineering";
 import randomizedAlgorithmsArticle from "./randomized-algorithms";
 import dirichletDrawerArticle from "./dirichlet-drawer-principle";
 import memorylessPropertyArticle from "./memoryless-property";
+import genericMethodsCSharpArticle from "./generic-methods-csharp";
 
 // Export all articles as an array
 const allArticles: Article[] = [
+  genericMethodsCSharpArticle,
   chaosEngineeringArticle,
   randomizedAlgorithmsArticle,
   dirichletDrawerArticle,
@@ -22,4 +24,5 @@ export {
   randomizedAlgorithmsArticle,
   dirichletDrawerArticle,
   memorylessPropertyArticle,
+  genericMethodsCSharpArticle,
 };
