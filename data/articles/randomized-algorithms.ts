@@ -6,64 +6,6 @@ const randomizedAlgorithmsArticle: Article = {
   slug: "randomized-algorithms",
   excerpt: "How algorithm randomization can be a powerful ally",
   content: `
-    <style>
-  .article-content {
-    max-width: 800px;
-    margin: 2rem auto;
-    padding: 1.5rem;
-    line-height: 1.6;
-    color: #dedede;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-    background-color: #1e1e1e;
-  }
-
-  .article-content h1,
-  .article-content h2 {
-    color: #ffffff;
-  }
-
-  .article-content h1 {
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
-    text-align: center;
-  }
-
-  .article-content h2 {
-    margin-top: 2rem;
-    font-size: 1.5rem;
-    border-bottom: 2px solid #444;
-    padding-bottom: 0.5rem;
-  }
-
-  .article-content p {
-    margin: 1rem 0;
-    font-size: 1rem;
-    color: #dedede;
-  }
-
-  .article-content ul {
-    margin: 1rem 0 1rem 1.5rem;
-    padding-left: 1rem;
-    list-style-type: disc;
-  }
-
-  .article-content li {
-    margin-bottom: 0.5rem;
-    font-size: 1rem;
-    color: #dedede;
-  }
-
-  pre code {
-    display: block;
-    padding: 1rem;
-    background-color: #2d2d2d;
-    border-radius: 8px;
-    color: #f8f8f2;
-    overflow-x: auto;
-  }
-</style>
-
     <div class="article-content">
   <h1>Have You Heard About "Randomized Algorithms"?</h1>
   

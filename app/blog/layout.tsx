@@ -1,5 +1,6 @@
 import type React from "react"
 import type { Metadata } from "next"
+import "@/styles/article.css"
 
 export const metadata: Metadata = {
   title: "Blog | Tech Portfolio",
