@@ -78,7 +78,6 @@ const brainbloomForgeProject: Project = {
     </div>
       `,
   image: "/projetos/brainbloom.jpeg",
-  demoUrl: "https://brainbloom-forge.vercel.app/",
   githubUrl: "https://github.com/FriggD/brainbloom-forge",
   technologies: ["React", "TypeScript", "Tailwind CSS", "Vite"],
   featured: true,
