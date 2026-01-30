@@ -8,8 +8,6 @@ const factoryMethodCSharpArticle: Article = {
   content: `
     <div class="article-content">
   <h1>Factory Method Pattern in C#: Flexible Object Creation</h1>
-  
-  <img src="/articles/factory.png" alt="Factory Method Pattern in C#" />
 
   <p>The <strong>Factory Method</strong> is a creational design pattern that provides an interface for creating objects in a superclass, but allows subclasses to alter the type of objects that will be created. Instead of calling a constructor directly, you call a factory method that returns the object.</p>
 

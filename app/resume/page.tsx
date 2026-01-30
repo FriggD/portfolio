@@ -115,18 +115,40 @@ export default function ResumePage() {
                 <div className="page-break-inside-avoid">
                   <div className="mb-2">
                     <h3 className="text-xl font-semibold mb-1">
+                      Fullstack Developer (Mid-Level)
+                    </h3>
+                    <p className="text-zinc-400 mb-1">KBase</p>
+                    <p className="text-zinc-400 mb-2">Feb/2025 – Current</p>
+                  </div>
+                  <p className="text-zinc-300">
+                    Development and maintenance of robust solutions using C# with .NET 8, 
+                    working on critical and large-scale applications. Responsible for building and evolving 
+                    REST APIs with focus on maturity, security and architecture best practices. Experience 
+                    with tools such as Entity Framework, Azure Blob Storage, Azure Functions, FluentValidation, 
+                    MediatR, SonarQube. Creation of unit tests in C# (xUnit). Use of Docker for development 
+                    and deployment. JavaScript frameworks (Angular 18). Relational database (PostgreSQL). 
+                    Code versioning with GitHub and Azure DevOps. Practice with DDD, dependency injection, 
+                    SOLID principles and Clean Architecture.
+                  </p>
+                </div>
+
+                <div className="page-break-inside-avoid">
+                  <div className="mb-2">
+                    <h3 className="text-xl font-semibold mb-1">
                       Systems Developer
                     </h3>
                     <p className="text-zinc-400 mb-1">Viceri SEIDOR</p>
-                    <p className="text-zinc-400 mb-2">Jun/2025 – Current</p>
+                    <p className="text-zinc-400 mb-2">Jun/2024 – Jan/2025</p>
                   </div>
                   <p className="text-zinc-300">
-                    Fullstack development of web applications with .NET, C# and JavaScript. 
-                    Data persistence using Entity Framework and integration with relational 
-                    and non-relational databases. Development and consumption of REST APIs. 
-                    Use of Azure Storage for cloud storage and Azure DevOps and Github for 
-                    code versioning, task management and delivery tracking. Participation 
-                    in the creation and maintenance of CI/CD pipelines.
+                    Development and maintenance of robust solutions using C# with .NET 3.5 and .NET 8, 
+                    working on critical and large-scale applications. Responsible for building and evolving 
+                    REST APIs with focus on maturity, security and architecture best practices. Experience 
+                    with tools such as Entity Framework, Azure Blob Storage, Azure Functions, FluentValidation, 
+                    MediatR, SonarQube. Creation of unit tests in C# (xUnit). Use of Docker for development 
+                    and deployment. JavaScript frameworks (Angular 18). Relational database (PostgreSQL). 
+                    Code versioning with GitHub and Azure DevOps. Practice with DDD, dependency injection, 
+                    SOLID principles and Clean Architecture.
                   </p>
                 </div>
 
