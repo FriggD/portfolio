@@ -12,10 +12,11 @@ export const metadata = {
 export default async function ProjectsPage({
   searchParams,
 }: {
-  searchParams: { [key: string]: string | string[] | undefined }
+  searchParams: Promise<{ [key: string]: string | string[] | undefined }>
 }) {
-  const tech = searchParams.tech as string | undefined
-  const featured = searchParams.featured === "true"
+  const params = await searchParams
+  const tech = params.tech as string | undefined
+  const featured = params.featured === "true"
 
   // Get all projects
   const allProjects = getProjects()
