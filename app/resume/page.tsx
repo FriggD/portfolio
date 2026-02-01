@@ -92,15 +92,17 @@ export default function ResumePage() {
                 Professional Summary
               </h2>
               <p className="text-zinc-300 mb-4">
-                Fullstack Developer with solid background in Computer
-                Engineering and ongoing Master's degree in Computer Science.
-                Experience in web projects with JavaScript, Angular, ReactJS,
-                NodeJS, .NET, C# and Python.
+                Backend Software Engineer with solid background in Software Engineering and 
+                specialization in Data Analysis. Extensive experience in developing and maintaining 
+                robust solutions using C#, .NET (3.5 to 8) and Python, with focus on REST APIs, 
+                distributed systems, and Clean Architecture. 
               </p>
               <p className="text-zinc-300">
-                Experience with agile methodologies (Scrum, Kanban), Git, manual
-                testing, system integration and AWS Lambda. Analytical,
-                communicative and results-oriented profile.
+                Strong expertise in relational databases (SQL Server, PostgreSQL), cloud technologies 
+                (Azure Functions, Azure Blob Storage, AWS Lambda), and modern development practices 
+                (DDD, SOLID, unit testing with xUnit, Docker). Experience as Agile Master coordinating 
+                multiple teams and as QA ensuring quality standards. Analytical, communicative, and 
+                results-oriented professional with leadership experience in academic and corporate environments.
               </p>
             </div>
 
@@ -180,12 +182,29 @@ export default function ResumePage() {
                     <p className="text-zinc-400 mb-2">Dec/2020 – Jan/2023</p>
                   </div>
                   <p className="text-zinc-300">
-                    Development and maintenance of web systems in Angular and .NET for 
-                    management of purebred cattle farms (Wagyu and Jersey), covering official 
-                    certification, government records, traceability and production processes. 
-                    Responsible for the evolution and maintenance of specialized platforms for 
-                    productive and reproductive management of dairy herds using .NET and Razor. 
-                    Data manipulation and modeling using SQL Server and PostgreSQL.
+                    Development and maintenance of web systems using Angular and .NET for management 
+                    of purebred cattle farms (Wagyu and Jersey), covering official certification, 
+                    government records, traceability and production processes. Responsible for the 
+                    evolution and maintenance of specialized platforms for productive and reproductive 
+                    management of dairy herds using .NET and Razor, implementing new features to meet 
+                    specific demands of rural producers, bug fixes and platform optimization.
+                    <span className="block mt-2"></span>
+                    Worked on software for administrative, zootechnical and financial management of 
+                    rural properties using .NET stack with Razor, implementing new functionalities to 
+                    simplify the control of complex agribusiness processes, continuous maintenance and 
+                    bug fixes.
+                    <span className="block mt-2"></span>
+                    Developed high-complexity technological solutions for ONS (National Electric System 
+                    Operator) in a distributed systems environment, using a diverse stack composed of 
+                    Python, .NET and Go (Golang) to implement and maintain functionalities focused on 
+                    operational data integration and monitoring of national electrical infrastructure.
+                    <span className="block mt-2"></span>
+                    Worked directly on data manipulation and modeling using SQL Server and PostgreSQL, 
+                    ensuring the integrity and performance of clients' productive and financial information. 
+                    Acted as a bridge between client needs and the development team, responsible for 
+                    requirements gathering, translating business demands into technical specifications 
+                    through user story writing and backlog refinement. Used Jira and GitLab for board 
+                    organization and delivery flow tracking.
                     <span className="block mt-1">
                       <strong>Result:</strong> Improved usability by implementing
                       a dairy production spreadsheet importer with multiple
