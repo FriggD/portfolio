@@ -112,25 +112,7 @@ export default function ResumePage() {
 
               {/* Experience Items */}
               <div className="space-y-6">
-                <div className="page-break-inside-avoid">
-                  <div className="mb-2">
-                    <h3 className="text-xl font-semibold mb-1">
-                      Fullstack Developer (Mid-Level)
-                    </h3>
-                    <p className="text-zinc-400 mb-1">KBase</p>
-                    <p className="text-zinc-400 mb-2">Feb/2025 – Current</p>
-                  </div>
-                  <p className="text-zinc-300">
-                    Development and maintenance of robust solutions using C# with .NET 8, 
-                    working on critical and large-scale applications. Responsible for building and evolving 
-                    REST APIs with focus on maturity, security and architecture best practices. Experience 
-                    with tools such as Entity Framework, Azure Blob Storage, Azure Functions, FluentValidation, 
-                    MediatR, SonarQube. Creation of unit tests in C# (xUnit). Use of Docker for development 
-                    and deployment. JavaScript frameworks (Angular 18). Relational database (PostgreSQL). 
-                    Code versioning with GitHub and Azure DevOps. Practice with DDD, dependency injection, 
-                    SOLID principles and Clean Architecture.
-                  </p>
-                </div>
+
 
                 <div className="page-break-inside-avoid">
                   <div className="mb-2">
