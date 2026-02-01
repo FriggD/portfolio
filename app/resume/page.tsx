@@ -122,7 +122,7 @@ export default function ResumePage() {
                       Systems Developer
                     </h3>
                     <p className="text-zinc-400 mb-1">Viceri SEIDOR</p>
-                    <p className="text-zinc-400 mb-2">Jun/2024 – Jan/2025</p>
+                    <p className="text-zinc-400 mb-2">Jun/2025 – Fev/2026</p>
                   </div>
                   <p className="text-zinc-300">
                     Development and maintenance of robust solutions using C# with .NET 3.5 and .NET 8, 
