@@ -2,4 +2,6 @@ node_modules
 .next
 sketch
 
-
+# Admin pages
+app/admin/
+app/api
