@@ -8,9 +8,11 @@ import memorylessPropertyArticle from "./memoryless-property";
 import genericMethodsCSharpArticle from "./generic-methods-csharp";
 import factoryMethodCSharpArticle from "./factory-method-csharp";
 import objectCalisthenicsArticle from "./object-calisthenics";
+import dockerDatabaseAccessArticle from "./docker-database-access";
 
 // Export all articles as an array
 const allArticles: Article[] = [
+  dockerDatabaseAccessArticle,
   objectCalisthenicsArticle,
   factoryMethodCSharpArticle,
   genericMethodsCSharpArticle,
@@ -31,4 +33,5 @@ export {
   genericMethodsCSharpArticle,
   factoryMethodCSharpArticle,
   objectCalisthenicsArticle,
+  dockerDatabaseAccessArticle,
 };
