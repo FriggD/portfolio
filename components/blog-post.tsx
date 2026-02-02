@@ -32,7 +32,7 @@ export default function BlogPost({ title, excerpt, date, image, slug }: BlogPost
         <h3 className="text-xl font-semibold mb-2 group-hover:text-pale_purple-400 transition-colors">{title}</h3>
         <p className="text-zinc-400 mb-4">{excerpt}</p>
         <Link
-          href={slug}
+          href={`/blog/${slug}`}
           className="inline-flex items-center text-sm text-pale_purple-400 hover:text-pale_purple-300 transition-colors"
         >
           Read More <ArrowRight size={16} className="ml-1" />
