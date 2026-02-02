@@ -6,9 +6,11 @@ import portfolioProject from "./portfolio";
 import supportCallsProject from "./support-calls";
 import genomicDataProject from "./genomic-data";
 import superheroAppProject from "./superhero-app";
+import distributedMonitoringProject from "./distributed-monitoring-system";
 
 // Export all projects as an array
 const allProjects: Project[] = [
+  distributedMonitoringProject,
   brainbloomForgeProject,
   portfolioProject,
   supportCallsProject,
@@ -25,4 +27,5 @@ export {
   supportCallsProject,
   genomicDataProject,
   superheroAppProject,
+  distributedMonitoringProject,
 };
