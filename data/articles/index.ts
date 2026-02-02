@@ -9,9 +9,11 @@ import genericMethodsCSharpArticle from "./generic-methods-csharp";
 import factoryMethodCSharpArticle from "./factory-method-csharp";
 import objectCalisthenicsArticle from "./object-calisthenics";
 import dockerDatabaseAccessArticle from "./docker-database-access";
+import ocelot_api_gateway_dotnetArticle from "./ocelot-api-gateway-dotnet";
 
 // Export all articles as an array
 const allArticles: Article[] = [
+  ocelot_api_gateway_dotnetArticle,
   dockerDatabaseAccessArticle,
   objectCalisthenicsArticle,
   factoryMethodCSharpArticle,
@@ -26,6 +28,7 @@ export default allArticles;
 
 // Export individual articles for direct access if needed
 export {
+  ocelot_api_gateway_dotnetArticle,
   chaosEngineeringArticle,
   randomizedAlgorithmsArticle,
   dirichletDrawerArticle,
