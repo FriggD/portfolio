@@ -677,7 +677,7 @@ await _context.SaveChangesAsync();
   image: "/articles/DappervsEntity Framework.png",
   featured: true,
   status: "Published",
-  date: "January 15, 2026",
+  date: "February 10, 2026",
 };
 
 export default dapperVsEntityFrameworkArticle;
