@@ -10,9 +10,11 @@ import factoryMethodCSharpArticle from "./factory-method-csharp";
 import objectCalisthenicsArticle from "./object-calisthenics";
 import dockerDatabaseAccessArticle from "./docker-database-access";
 import ocelot_api_gateway_dotnetArticle from "./ocelot-api-gateway-dotnet";
+import dapperVsEntityFrameworkArticle from "./dapper-vs-entity-framework";
 
 // Export all articles as an array
 const allArticles: Article[] = [
+  dapperVsEntityFrameworkArticle,
   ocelot_api_gateway_dotnetArticle,
   dockerDatabaseAccessArticle,
   objectCalisthenicsArticle,
@@ -28,6 +30,7 @@ export default allArticles;
 
 // Export individual articles for direct access if needed
 export {
+  dapperVsEntityFrameworkArticle,
   ocelot_api_gateway_dotnetArticle,
   chaosEngineeringArticle,
   randomizedAlgorithmsArticle,
