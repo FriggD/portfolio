@@ -1,6 +1,7 @@
 import type { Article } from "@/lib/types";
 
 // Import individual articles
+import doraMetricsArticle from "./dora-metrics-devops-performance";
 import chaosEngineeringArticle from "./chaos-engineering";
 import randomizedAlgorithmsArticle from "./randomized-algorithms";
 import dirichletDrawerArticle from "./dirichlet-drawer-principle";
@@ -14,6 +15,7 @@ import dapperVsEntityFrameworkArticle from "./dapper-vs-entity-framework";
 
 // Export all articles as an array
 const allArticles: Article[] = [
+  doraMetricsArticle,
   dapperVsEntityFrameworkArticle,
   ocelot_api_gateway_dotnetArticle,
   dockerDatabaseAccessArticle,
@@ -30,6 +32,7 @@ export default allArticles;
 
 // Export individual articles for direct access if needed
 export {
+  doraMetricsArticle,
   dapperVsEntityFrameworkArticle,
   ocelot_api_gateway_dotnetArticle,
   chaosEngineeringArticle,
