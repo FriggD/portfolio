@@ -458,28 +458,19 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Track Deployment
-        if: github.event.deployment_status.state == 'success'
+        if: github.event.deployment_status.state == success
         run: |
           curl -X POST https://your-metrics-api.com/deployments
-            -H "Content-Type: application/json"
-            -d '{
-              "deployment_id": "${{{{ github.event.deployment.id }}}}",
-              "environment": "${{{{ github.event.deployment.environment }}}}",
-              "commit_sha": "${{{{ github.sha }}}}",
-              "timestamp": "${{{{ github.event.deployment_status.created_at }}}}"
-            }'
+            -H Content-Type: application/json
+            -d deployment_id: DEPLOYMENT_ID
 
       - name: Calculate Lead Time
         run: |
-          COMMIT_TIME=$(git show -s --format=%ci ${{{{ github.sha }}}})
-          DEPLOY_TIME=$(date -u +"%Y-%m-%dT%H:%M:%SZ")
+          COMMIT_TIME=COMMIT_TIMESTAMP
+          DEPLOY_TIME=DEPLOY_TIMESTAMP
           curl -X POST https://your-metrics-api.com/lead-time
-            -H "Content-Type: application/json"
-            -d "{
-              \"commit_sha\": \"${{{{ github.sha }}}}\",
-              \"commit_time\": \"$COMMIT_TIME\",
-              \"deploy_time\": \"$DEPLOY_TIME\"
-            }"</code></pre>
+            -H Content-Type: application/json
+            -d commit_sha: COMMIT_SHA</code></pre>
 
       <h3>Step 2: Create Dashboards</h3>
       <p>Build dashboards to visualize your metrics over time. Key visualizations include:</p>
