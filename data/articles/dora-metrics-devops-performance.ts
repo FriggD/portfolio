@@ -622,7 +622,7 @@ jobs:
   image: "/projetos/dora-metrics.png",
   featured: true,
   status: "Published",
-  date: "February 06, 2025",
+  date: "February 18, 2026",
 };
 
 export default doraMetricsArticle;
